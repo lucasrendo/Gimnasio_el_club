@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Browser config -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- local CSS -->
+    <link href="CSS/global-styles.css" rel="stylesheet" type="text/css"> <!--site styles-->
+    <link href="CSS/actividades.css" rel="stylesheet" type="text/css"> <!--page styles-->
+    <link rel="stylesheet" href="CSS/flickity.css" media="screen"> <!--slider-->
+
+    <title>Gimnasio El Club</title>
+</head>
+
+<body>
+
+    <!--=== HEADER ===-->
+    <header>
+            <nav class="nav-bar">
+                <img src="Multimedia/elclub-logo.png" alt="Company logo" class="header-logo">
+
+                <ul class="nav-list">
+                    <li><a href="inicio.html" class="nav-link">INICIO</a></li>
+                    <li><a href="quienes-somos.html" class="nav-link">QUIENES SOMOS</a></li>
+                    <li><div class="actividades-dropdown">
+                            <a href="actividades.html" class="active">ACTIVIDADES<i class='bx bxs-down-arrow'></i></a>
+                            <div class="actividades-content">
+                                <a href="actividades.html#acondicionamiento">ACONDICIONAMIENTO FISICO</a>
+                                <a href="actividades.html#aquaerobica">AQUAEROBICA</a>
+                                <a href="actividades.html#funcional">ENTRENAMIENTO FUNCIONAL</a>
+                                <a href="actividades.html#escuela-verano">ESCUELA DE VERANO</a>
+                                <a href="actividades.html#gimnasia-acuatica">GIMNASIA ACUATICA GRUPAL</a>
+                                <a href="actividades.html#gimnasia-postural">GIMNASIA POSTURAL</a>
+                                <a href="actividades.html#hidroterapia">HIDROTERAPIA</a>
+                                <a href="actividades.html#natacion">NATACION</a>
+                                <a href="actividades.html#personal-trainer">PERSONAL TRAINER</a>
+                                <a href="actividades.html#pilates">PILATES</a>
+                                <a href="actividades.html#running">RUNNING</a>
+                                <a href="actividades.html#zumba">ZUMBA</a>
+                            </div>
+                        </div>
+                    </li> 
+                    <li><a href="horarios.html" class="nav-link">HORARIOS</a></li>
+                    <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+                    <li><a href="smart-training.html" class="nav-link">SMART TRAINING</a></li>
+                </ul>
+                <div class="nav-sm">
+                    <a href="https://www.instagram.com/elcubag"><i class='bx bxl-instagram  bx-xs sm-icon'></i></a>
+                    <a href="https://www.facebook.com/elcub.altagracia"><i class='bx bxl-facebook bx-xs sm-icon'></i></a>
+                </div>
+            </nav>
+    </header>
+
+    <div class="header-shadow"></div>
+
+    <!--Back to top-->
+    <div class="jump-top"><a href="#top"><i class='bx bxs-up-arrow-square'></i></a></div>
+
+    <!--=== SLIDER ===-->
+    
+    <section class="slider js-flickity" 
+        data-flickity-options='{"wrapAround": true, "autoPlay": 10000, "pauseAutoPlayOnHover": false, "dragThreshold": 10 }'>   
+                                                                                                                
+        <div class="slide">
+            <div>
+                <img src="Multimedia/entrenamiento-funcional.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">ENTRENAMIENTO FUNCIONAL</h2>
+                    <p class="slide-schedule">LUNES, MIERCOLES Y VIERNES <br> 15 A 16 - 19:30 A 20:30 - 21 A 22</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <div>
+                <img src="Multimedia/running.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">RUNNING</h2>
+                    <p class="slide-schedule">MARTES Y JUEVES <br> 20 A 21</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div>
+                <img src="Multimedia/acondicionamiento.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">ACONDICIONAMIENTO FISICO</h2>
+                    <p class="slide-schedule"> LUNES A VIERNES <br> 8 A 23</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--=== PAGE CONTENT ===-->
+
+    <main>
+
+        <img src="/Multimedia/main-logo.png" alt="" class="deco-img">
+        <h2 class="title">ACTIVIDADES</h2>
+        <hr class="half-line">
+        <ul class="jump-list">
+            <li class="jump-item divider"><a href="#acondicionamiento" class="jump-link">Acondicionamiento Fisico</a></li>
+            <li class="jump-item divider"><a href="#aquaerobica" class="jump-link">Aquaerobica</a></li>
+            <li class="jump-item divider"><a href="#funcional" class="jump-link">Entrenamiento Funcional</a></li>
+            <li class="jump-item divider"><a href="#escuela-verano" class="jump-link">Escuela de Verano</a></li>
+            <li class="jump-item">        <a href="#gimnasia-acuatica" class="jump-link">Gimnasia Acuatica Grupal</a></li>
+            <li class="jump-item divider"><a href="#gimnasia-postural" class="jump-link">Gimnasia Postural</a></li>
+            <li class="jump-item divider"><a href="#hidroterapia" class="jump-link">Hidroterapia</a></li>
+            <li class="jump-item divider"><a href="#natacion" class="jump-link">Natacion</a></li>
+            <li class="jump-item divider"><a href="#personal-trainer" class="jump-link">Personal Trainer</a></li>
+            <li class="jump-item divider"><a href="#pilates" class="jump-link">Pilates</a></li>
+            <li class="jump-item divider"><a href="#running" class="jump-link">Running</a></li>
+            <li class="jump-item">        <a href="#zumba" class="jump-link">Zumba</a></li>
+        </ul>
+
+        <section>
+            <h3 class="subtitle" id="acondicionamiento">ACONDICIONAMIENTO FISICO</h3>
+            <hr class="half-line">
+            <p>Debido a nuestro completo y variado equipamiento, desde el área de Acondicionamiento Físisco tenemos una propuesta de trabajo muy diversa y estamos en condiciones de elaborar planes de trabajo para personas con diferentes objetivos.</p>
+            <ul>
+                <li class="list-item">Mejorar calidad de vida</li> 
+                <li class="list-item">Entrenamiento para deportistas de mediano y alto rendimiento.</li> 
+                <li class="list-item">Musculación estética. (aumento de masa muscular)</li> 
+                <li class="list-item">Reducción de tejido adiposo</li> 
+                <li class="list-item">Recuperación y prevención de lesiones.</li> 
+            </ul>
+            <p>A cada socio se le elaborará un plan individual, el cual será modificado cada 4 semanas atendiendo a las necesidades particulares y a la progresión de trabajo para alcanzar los objetivos propuestos para cada período.</p>
+        </section>    
+        
+        <section>
+            <h3 class="subtitle" id="aquaerobica">AQUAEROBICA</h3>
+            <hr class="half-line">
+            <p>Es un actividad que combina los beneficios de la gimnasia aeróbica con la resistencia que ofrece el agua a los diferentes movimientos. A pesar de que los movimientos pueden ser intensos, prácticamente no existen impactos a nivel de articulaciones y columna vertebral, durante los diferentes ejercicios.
+            <p></p>
+            Un equipo de música y la profesora van marcando el ritmo de la actividad.</p>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="funcional">ENTRENAMIENTO FUNCIONAL</h3>
+            <hr class="half-line">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium nesciunt, eos explicabo fugit qui iure enim a temporibus! Sunt praesentium similique debitis aliquam iste error consequuntur rerum. Aliquam, laudantium.</p>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="escuela-verano">ESCUELA DE VERANO</h3>
+            <hr class="half-line">
+            <p>La más divertida y completa escuela de verano en las instalaciones del Gimnasio El Club. Recibimos los chicos de la ciudad y alrededores que desean disfrutar de pleno de la temporada de verano.
+                <p></p>
+            Un importante grupo de profesionales, se encargan de dirigir los jovencitos que disfrutan completamente de las instalaciones. Encontrarás la acostumbrada excelencia en enseñanza de natación, iniciación deportiva, vida en la naturaleza, campamentos, talleres de teatro, música, clases de ritmos y mucho más.
+            <p></p>
+            <span class="red-text">Enseñar a nadar es el objetivo esencial</span>
+            <p></p>
+            Una faceta fundamental para que los papás decidan donde van a desarrollar las actividades estivales los más chicos de la familia, es que en Gimnasio El Club más allá de su completa infraestructura y las múltiples posibilidades de recreación que brindan, se hace especial hincapié en la enseñanza de la natación. Para conseguir los mejores resultados, los chicos se dividen en grupos, por edades y por sus conocimientos en natación.
+            <p></p>
+            Edades de 4 a 11 años. No se suspenden clases por lluvia o frio. </p>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="gimnasia-acuatica">GIMNASIA ACUATICA GRUPAL</h3>
+            <hr class="half-line">
+            <p>La Gimnasia Acuática es una actividad a través de la cual podemos conseguir innumerables beneficios para la salud, al mismo tiempo que sociabilizamos. Es para las personas que quieran pasar un buen momento en el medio acuático, al mismo tiempo que reducen dolores articulares y musculares o combaten el stress. Es muy recomendada por médicos y kinesiólogos. </p>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="gimnasia-postural">GIMNASIA POSTURAL</h3>
+            <hr class="half-line">
+            <p>Es muy común recibir en el gimnasio a la gente con fuertes contracturas o bien con dolores de columna producidos por diferentes desequilibrios posturales lo cual tiene estrecha relación con la disminución de la amplitud de movimiento.
+            <p></p>
+            Posiciones incorrectas adoptadas durante muchas horas en el trabajo, exceso de esfuerzos al movilizar grandes cargas durante el mismo, utilizaciones incorrectas del cuerpo en los gestos de la vida cotidiana, son algunos de los factores que influyen negativamente sobre nuestras posturas.
+            <p></p>
+            Desde la gimnasia postural proponemos un sistema de trabajo con grupos reducidos de alumnos donde el objetivo principal es detectar aquellos desequilibrios posturales y trabajar sobre ellos para atenuar o eliminar los dolores de columna.</p>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="hidroterapia">HIDROTERAPIA</h3>
+            <hr class="half-line">
+            <p>Actividades desarrolladas en el medio acuático, a cargo de un Lic. en Kinesiología y Fisioterapia, orientadas al apoyo de las terapias médicas y al tratamiento de diversas patologías (Posturales-articulares-asma-hipertensión-etc.). Confección de un plan de ejercicio físico adaptado y guiado a cubrir las afecciones presentadas por el paciente.
+            <p></p>
+            Trabajando en grupos reducidos con el objeto de realizar un seguimiento más personalizado en la progresión del alumno. Siempre aportando y apuntando a mejorar la calidad de vida. </p>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="natacion">NATACION</h3>
+            <hr class="half-line">
+            <p><span class="red-text">La Pileta</span>
+                <p></p>
+            La pileta fue construida atendiendo las normas internacionales, supervisadas por la Federación Cordobesa de Natación. Las dimensiones son de 25 m x 10,50 m, con una profundidad de 1,35 m. Esto nos posibilita ubicar 5 carriles de 2 m de ancho cada uno.
+            <p></p>
+            El interior de la pileta está recubierto con cerámicos vítreos (venecitas). El solarium, o vereda perimetral, tiene losetas antideslizantes, minimizando así los riesgos de resbalamiento y caídas. El agua esta climatizada, como así también el ambiente del natatorio.
+            <p></p>
+            Contamos con equipos de filtrado, purificado, que nos permitirán garantizar la calidad, transparencia y temperatura del agua.
+            <p></p>
+            Se utiliza para el tratamiento del agua un equipo de ozonización de última tecnología. Este proceso especial nos posibilita reducir fuertemente la concentración de cloro, agregando confort, seguridad y cuidando de la salud de los socios y profesores.
+            <p></p>
+            Realizamos un control diario de los principales parámetros del agua lo que nos permite mantenerla en óptimas condiciones. Con frecuencia se realizan análisis de laboratorio para evaluar la calidad del agua.
+            <p></p>
+            <span class="red-text">Actividades</span></p>
+            <ul class="red-list">
+                <li class="red-list-item"><a href="#natacion-bebes" class="section-jump">Natación para bebes: de 0 a 3 años</a></li>
+                <li class="red-list-item"><a href="#natacion-ninos" class="section-jump">Natación para niños de 4 a 12 años</a></li>
+                <li class="red-list-item"><a href="#natacion-adultos" class="section-jump">Natación para jóvenes y adultos mayores de 12 años</a></li>
+                <li class="red-list-item"><a href="#natacion-libre" class="section-jump">Natación libre</a></li>
+                <li class="red-list-item">Gimnasia Acuática Adaptada</li>
+                <li class="red-list-item">Gimnasia Acuática Grupal</li>
+                <li class="red-list-item">Aquaeróbica</li>
+                <li class="red-list-item">Hidroterapia</li>
+            </ul>
+            <p>La natación es un deporte que le permite a una persona mantenerse a flote y desplazarse en el agua sin tocar el fondo, gracias a la acción propulsora, realizada por movimientos coordinados y repetitivos de distintas partes del cuerpo, sobre todo de los miembros superiores (brazada) e inferiores (patada). En el mundo esta actividad es regulada por la FINA (Federación Internacional de Natación), en la Argentina por la CADDA (Confederación Argentina de Deportes Acuáticos) y en Córdoba por la FCN (Federación Cordobesa de Natación).
+            <p></p>
+            En nuestro gimnasio la pileta es la niña mimada, todo usuario y visitante se deslumbra con las instalaciones. Los profesionales de la salud cada día recomiendan más la natación y las actividades acuáticas para corregir y o mejorar problemas respiratorios, dolencias de la columna vertebral, hipertensión, obesidad, diabetes, etc.</p>
+
+            <section>
+                <h4 class="section-title" id="natacion-bebes">Natación para Bebes o Matronatación</h4>
+                <p>Podría definirse como una experiencia afectiva, recreativa y placentera para bebes ó niños de entre 5 meses y 3 años de edad, que acompañados de su padre, madre o familiar, disfrutan del agua. Los recién nacidos están dotados de una variedad de reflejos que hacen posible el desarrollo de una conducta adaptada a este medio. Esta experiencia poco tiene que ver con lo que comúnmente conocemos por nadar, puesto que esto se podrá lograr recién a partir de los 4 ó 5 años. </p>
+                
+                <h5 class="section-subtitle">Beneficios para el Bebé</h5>
+                <ol>
+                    <li class="decimal-list">Ayuda al desarrollo Psicomotor.</li>
+                    <li class="decimal-list">Ayuda al desarrollo del sistema cardiorrespiratorio, inmunológico, etc.</li>
+                    <li class="decimal-list">Ayuda al bebe a sentirse más seguro.</li>
+                    <li class="decimal-list">Inicia la socialización dentro de un sistema lúdico y recreativo.</li>
+                    <li class="decimal-list">Mejora y fortalece la relación entre el bebé-madre y padre.</li>
+                </ol>
+
+                <h5 class="section-subtitle">Recomendaciones</h5>
+                <ul>
+                    <li class="list-item">No dejes solo al bebé cerca de la pileta, él no mide el peligro.</li>
+                    <li class="list-item">Antes de iniciar la actividad consulta al Pediatra</li>
+                    <li class="list-item">Si se puede, elegir un horario en que no tenga que comer ni dormir.</li>
+                    <li class="list-item">Evitar darle de comer minutos antes de la clase.</li>
+                    <li class="list-item">Un niño enfermo no debe bañarse en la pileta.</li>
+                    <li class="list-item">Evitar que el bebé tome frio, desvistiendo y vistiéndolo rápidamente.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h4 class="section-title" id="natacion-ninos">Natación para niños de 4 a 12 años</h4>
+                <p>Se trata de enseñar a nadar a niños que puedan o no tener antecedentes de la práctica de este deporte.
+                <p></p>
+                La primera etapa es la de ambientación donde intentamos hacerlos sentir a gusto en el agua, brindándoles las herramientas para que puedan desenvolverse en este medio, sin esfuerzo y con naturalidad. Luego se comenzara con los trabajos de flotación, respiración y los diferentes tipos de propulsión, que tendrá como punto de inicio el desplazamiento "perrito".
+                <p></p>
+                Se trabaja para que la enseñanza sea lo más personalizada posible, conformando grupos pequeños de niños donde el profesor permanecerá dentro del agua, lo que le permitirá corregir de manera asistida a los chicos y brindarle mayor confianza y seguridad. Los más pequeños ingresan de a uno al agua junto con el profesor. </p>
+            </section>
+
+            <section>
+                <h4 class="section-title" id="natacion-adultos">Natación para jóvenes y adultos desde 12 años</h4>
+                <p>En horarios especiales y teniendo conocimientos previos o no, la enseñanza o el perfeccionamiento se realiza con profesores formados para tal fin.
+                <p></p>
+                Para muchos adultos el medio acuático es desconocido, ya que en su juventud tuvieron poco contacto con el agua debido que la práctica de deportes y en especial la natación estaba reservada a una minoría. En la actualidad esas personas tienen la oportunidad de practicar y aprender a nadar durante todo el año.
+                <p></p>
+                Los objetivos pueden ser muy variados, desde la superación del miedo al agua o el aprendizaje y perfeccionamiento de los diferentes estilos, hasta el entrenamiento de la natación.</p>
+            </section>
+
+            <section>
+                <h4 class="section-title" id="natacion-libre">Natación Libre</h4>
+                <p>En la pileta se puede realizar libremente la natación, sin necesidad de aporte del profesor. Esta práctica es solo recomendada para adultos que ya saben nadar y no quieren tener un seguimiento, ya sea por su experiencia o porque solo desean desplazarse para sentir el placer del agua, que relaja y reconforta.</p>
+            </section>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="personal-trainer">PERSONAL TRAINER</h3>
+            <hr class="half-line">
+            <p>Implemento de un Programa de acondicionamiento físico INDIVIDUALIZADO a cargo de un profesor altamente capacitado.
+            <p></p>
+            Atención exclusiva, el profesor adapta el plan de trabajo respondiendo a los objetivos (relacionados a lo deportivo, lo estético y la salud) del interesado. Realizando un seguimiento minucioso en cuanto al cumplimiento de las expectativas propuestas y teniendo en todo momento especial consideración con las necesidades, gustos y preferencias de alumno.</p>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="pilates">PILATES</h3>
+            <hr class="half-line">
+            <p>El método Pilates se basa en ejercicios que ayudan a mejorar la tonificación de los músculos a través de una sucesión de movimientos fluidos. Su esencia radica en la utilización del cerebro para el control el cuerpo, fomentando el equilibrio tónico postural.
+            <p></p>
+            La mayoría de los ejercicios se realizan mediante una serie de movimientos suaves y lentos, con la constante contracción de la zona media del cuerpo. Se realizan con la ayuda de aparatos diseñados específicamente para esta disciplina. En todos y cada uno de estos movimientos controlados se intenta conseguir la mayor precisión posible a través del control de la respiración, la correcta alineación de nuestro cuerpo y, por supuesto, la concentración</p>
+        </section>
+        
+        <section>
+            <h3 class="subtitle" id="running">RUNNING</h3>
+            <hr class="half-line">
+            <p>Actividad Física al aire libre que podes realizar caminando, trotando o corriendo. Te acompañamos para que puedas cumplir tus objetivos con la premisa de que cada día te sientas mejor. Ideal para formar parte de un grupo de amigos apasionados por la actividad física que te garantizan pasar un buen momento.
+            <p></p>
+            Te ayudamos a entrenar para alcanzar tus metas.</p>
+        </section>
+
+        <section>
+            <h3 class="subtitle" id="zumba">ZUMBA</h3>
+            <hr class="half-line">
+            <p>La zumba es una mezcla de ritmos latinos (salsa, merengue, flamenco o bachata) y ejercicios aeróbicos que se ha convertido actividad de moda por ser muy divertida y motivadora. Se trata de una disciplina fitness ideada por un colombiano, Alberto ‘Beto’ Pérez, y su nombre es un derivado de la palabra rumba, que es como los colombianos denominan coloquialmente a las fiestas.</p>
+        </section>
+
+    </main>
+
+    <!--=== FOOTER ===-->
+
+    <footer>
+        <div class="foot-info">
+            <div class="container">
+                <div class="foot-child">
+                    <img src="Multimedia/footer-logo.png" alt="">
+                    <p>
+                        GIMNASIO EL CLUB Ecuador 55,<br>
+                        Alta Gracia - Cordoba<br>
+                        Tel.: (03547) 42-8060
+                    </p>
+
+                </div>
+
+                <div class="foot-child">
+                    <p class="titulo-opiniones"> Opiniones de nuestros socios:</p>
+
+                    <p class="opinion">"Excelente lugar para entrenar y pasar un buen rato"</p>
+                    <p class="autor-opinion">Matias Pyro Guemes</p>
+
+                    <p class="opinion">"Muy buen club! Completo, buen ambiente, moderno! La pileta excelente! Sigan asi!"</p>
+                    <p class="autor-opinion">Gustavo KallenBach</p>
+
+                    <p class="opinion">"Excelente muy bien logrado excelente los profes y una sala muy completa... La verdad muy recomendable"</p>
+                    <p class="autor-opinion">Nahuel Panza</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-links">
+            <a href="/inicio.html" class="foot-link">INICIO</a>
+            <a href="/quienes-somos.html" class="foot-link">QUIENES SOMOS</a>
+            <a href="/actividades.html" class="foot-link">ACTIVIDADES</a>
+            <a href="/horarios.html" class="foot-link">HORARIOS</a>
+            <a href="/contacto.html" class="foot-link">CONTACTO</a>
+            <a href="/smart-training.html" class="foot-link">SMART TRAINING</a>
+        </div>
+    </footer>
+    
+    <!--flickity-->
+    <script src="JS/flickity.pkgd.js"></script>
+</body>
+
+</html>

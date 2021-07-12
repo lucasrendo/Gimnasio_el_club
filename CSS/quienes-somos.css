@@ -1,0 +1,118 @@
+/*=== CSS VARIABLES ===*/
+:root {
+
+    /*Font size normalized*/
+    --title: 2.25rem;
+    --subtitle: 1.4375rem;
+    --paragraph: 0.9375rem;
+}
+
+/*=== BASE ===*/
+hr {
+    color: red;
+}
+
+/*=== CSS CLASSES ===*/
+main{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    max-width: 1200px;
+    line-height: 23px;
+    font-size: var(--paragraph)
+}
+
+.deco-img{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+.title{
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: var(--title);
+    color: rgb(204, 0, 0);
+    font-weight: 400;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0px;
+    height: 0.15rem;
+    width: 25%;
+    background-color: rgb(204, 0, 0);
+}
+
+.subtitle {
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: var(--subtitle);
+    color: rgb(204, 0, 0);
+    font-weight: 400;
+}
+
+.subtitle::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0px;
+    height: 0.15rem;
+    width: 25%;
+    background-color: rgb(204, 0, 0);
+}
+
+.half-line{
+    width: 50%;
+    margin-left: 0px;
+}
+
+.italic{
+    color: #272727;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.values{
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.15rem 0.5rem;
+    background-color: rgb(40, 167, 69);
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.list {
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.list-item::before {
+    content: "\2022";  
+    color: red; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.list-item {
+    font-weight: 400;
+}
+
+/*=== BREAKPOINTS ===*/
+
+@media only screen and (min-device-width: 768px) {
+    .deco-img{
+        display: initial;
+    }

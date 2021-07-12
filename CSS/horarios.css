@@ -1,0 +1,207 @@
+/*=== CSS VARIABLES ===*/
+:root {
+
+    /*Font size normalized*/
+    --title: 2.25rem;
+    --subtitle: 1.4375rem;
+    --paragraph: 0.9375rem;
+}
+
+/*=== BASE ===*/
+hr {
+    color: red;
+}
+
+main{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    max-width: 1200px;
+    line-height: 23px;
+    font-size: var(--paragraph);
+}
+
+.schedule p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*=== CSS CLASSES ===*/
+
+.cell-border{
+    background-color:blue;
+}
+
+.deco-img{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+.title{
+    position: relative;
+    margin-bottom: 0px;
+    font-size: var(--title);
+    color: rgb(204, 0, 0);
+    font-weight: 400;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0px;
+    height: 0.15rem;
+    width: 25%;
+    background-color: rgb(204, 0, 0);
+}
+
+.half-line{
+    width: 50%;
+    margin-left: 0px;
+}
+
+.overflow-container{
+    padding-top: 0.6rem ;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    overflow: auto;
+    height: 90vh;
+}
+
+.schedule{
+    min-width: 930px;
+    max-width: 1110px;
+}
+
+.day-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 80px;
+    background-color: rgb(51, 51, 51);
+}
+
+.day-container{
+    position: relative;
+    border-right: 1px solid white;  
+}
+
+.big-initial{
+    position: absolute;
+    bottom: 50px;
+    left: 0.5rem;
+    width: 100%;
+    color: rgb(204, 51, 51);
+    font-size: 75px;
+}
+
+.day{
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.start-time-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2.5rem;
+    place-items: center left;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    background-color:rgb(245, 245, 245);
+    color: rgb(204, 51, 51);
+    font-weight: 600;
+}
+
+.start-time-container{
+    display: flex;
+    align-content: center;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid rgb(233, 233, 233);
+    width: 100%;
+    height: 100%;
+}
+
+.activity-grid-1row{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    background-color:rgb(245, 245, 245);
+}
+
+.activity-grid-2row{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 90px 1fr;
+    background-color:rgb(245, 245, 245);
+}
+
+.activity-grid-3row{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 90px 90px 1fr;
+    background-color:rgb(245, 245, 245);
+}
+
+.activity-grid-4row{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 90px) 1fr;
+    background-color:rgb(245, 245, 245);
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 0.5rem;
+    border: 1px solid rgb(233, 233, 233);
+}
+
+.shorter-activity{
+    height: 75px;
+}
+
+.normal-activity{
+    height: 90px;
+}
+
+.longer-activity{
+    height: 120px;
+}
+
+.name{
+    color: rgb(102, 102, 102);
+}
+
+.timeframe{
+    color: rgb(153, 153, 153);
+}
+
+.activity:hover {
+    background-color: rgb(204, 0, 0);
+}
+
+.activity:hover .name {
+    color: white;
+}
+
+.activity:hover .timeframe{
+    color: rgb(153, 153, 153);
+}
+
+/*=== BREAKPOINTS ===*/
+@media only screen and (min-device-width: 768px) {
+    .deco-img{
+        display: initial;
+    }
+}

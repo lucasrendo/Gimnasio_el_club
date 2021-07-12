@@ -1,0 +1,181 @@
+/*=== CSS VARIABLES ===*/
+:root {
+
+    /*Font size normalized*/
+    --title: 2.25rem;
+    --subtitle: 1.4375rem;
+    --paragraph: 0.9375rem;
+}
+
+/*=== BASE ===*/
+hr {
+    color: red;
+}
+
+main a{
+    color: inherit;
+}
+
+main a:hover{
+    color: inherit;
+    text-decoration: underline;
+}
+
+ol, ul{
+    margin-top: 0px;
+    padding-left: 1rem;
+}
+
+/*=== CSS CLASSES ===*/
+
+.red-text{
+    color: rgb(204, 0, 0);
+}
+
+main{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    max-width: 1200px;
+    line-height: 23px;
+    font-size: var(--paragraph)
+}
+
+.deco-img{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+.title{
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: var(--title);
+    color: rgb(204, 0, 0);
+    font-weight: 400;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0px;
+    height: 0.15rem;
+    width: 25%;
+    background-color: rgb(204, 0, 0);
+}
+
+.subtitle {
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: var(--subtitle);
+    color: rgb(204, 0, 0);
+    font-weight: 400;
+}
+
+.subtitle::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0px;
+    height: 0.15rem;
+    width: 25%;
+    background-color: rgb(204, 0, 0);
+}
+
+.half-line{
+    width: 50%;
+    margin-left: 0px;
+}
+
+.section-title{
+    margin-bottom: 0rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.section-subtitle{
+    margin-bottom: 0.5rem;
+    font-size: 1.17rem;
+    font-weight: 400;
+}
+
+.jump-list{
+    text-align: center;
+}
+
+.jump-item{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.divider{
+    position: relative;
+}
+
+.divider::after{
+    content: "|";
+    position: absolute;
+    right: -0.75rem;
+}
+
+.jump-link{
+    display: inline-block;
+    color: #464646;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.jump-link:hover{
+    color: red;
+    cursor: default;
+}
+
+.list-item{
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.italic{
+    color: #272727;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.red-list{
+    margin-top: 0px;
+    padding-left: 1rem;
+}
+
+.red-list-item{
+    margin-left: 0px;
+}
+
+.red-list-item::before {
+    content: "\2022";  
+    color: red; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.section-jump{
+    font-weight: 500;
+}
+
+.decimal-list{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+/*=== BREAKPOINTS ===*/
+
+@media only screen and (min-device-width: 768px) {
+    .deco-img{
+        display: initial;
+    }
+}

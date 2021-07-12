@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Browser config -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- local CSS -->
+    <link href="CSS/global-styles.css" rel="stylesheet" type="text/css"> <!--site styles-->
+    <link href="CSS/horarios.css" rel="stylesheet" type="text/css"> <!--page styles-->
+    <link rel="stylesheet" href="CSS/flickity.css" media="screen"> <!--slider-->
+
+    <title>Gimnasio El Club</title>
+</head>
+
+<body>
+
+    <!--=== HEADER ===-->
+    <header>
+            <nav class="nav-bar">
+                <img src="Multimedia/elclub-logo.png" alt="Company logo" class="header-logo">
+
+                <ul class="nav-list">
+                    <li><a href="inicio.html" class="nav-link">INICIO</a></li>
+                    <li><a href="quienes-somos.html" class="nav-link">QUIENES SOMOS</a></li>
+                    <li><div class="actividades-dropdown">
+                            <a href="actividades.html" class="nav-link">ACTIVIDADES<i class='bx bxs-down-arrow'></i></a>
+                            <div class="actividades-content">
+                                <a href="actividades.html#acondicionamiento">ACONDICIONAMIENTO FISICO</a>
+                                <a href="actividades.html#aquaerobica">AQUAEROBICA</a>
+                                <a href="actividades.html#funcional">ENTRENAMIENTO FUNCIONAL</a>
+                                <a href="actividades.html#escuela-verano">ESCUELA DE VERANO</a>
+                                <a href="actividades.html#gimnasia-acuatica">GIMNASIA ACUATICA GRUPAL</a>
+                                <a href="actividades.html#gimnasia-postural">GIMNASIA POSTURAL</a>
+                                <a href="actividades.html#hidroterapia">HIDROTERAPIA</a>
+                                <a href="actividades.html#natacion">NATACION</a>
+                                <a href="actividades.html#personal-trainer">PERSONAL TRAINER</a>
+                                <a href="actividades.html#pilates">PILATES</a>
+                                <a href="actividades.html#running">RUNNING</a>
+                                <a href="actividades.html#zumba">ZUMBA</a>
+                            </div>
+                        </div>
+                    </li> 
+                    <li><a href="horarios.html" class="active">HORARIOS</a></li>
+                    <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+                    <li><a href="smart-training.html" class="nav-link">SMART TRAINING</a></li>
+                </ul>
+                <div class="nav-sm">
+                    <a href="https://www.instagram.com/elcubag"><i class='bx bxl-instagram  bx-xs sm-icon'></i></a>
+                    <a href="https://www.facebook.com/elcub.altagracia"><i class='bx bxl-facebook bx-xs sm-icon'></i></a>
+                </div>
+            </nav>
+    </header>
+
+    <div class="header-shadow"></div>
+
+    <!--Back to top-->
+    <div class="jump-top"><a href="#top"><i class='bx bxs-up-arrow-square'></i></a></div>
+
+    <!--=== SLIDER ===-->
+    
+    <section class="slider js-flickity" 
+        data-flickity-options='{"wrapAround": true, "autoPlay": 10000, "pauseAutoPlayOnHover": false, "dragThreshold": 10 }'>   
+                                                                                                                
+        <div class="slide">
+            <div>
+                <img src="Multimedia/entrenamiento-funcional.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">ENTRENAMIENTO FUNCIONAL</h2>
+                    <p class="slide-schedule">LUNES, MIERCOLES Y VIERNES <br> 15 A 16 - 19:30 A 20:30 - 21 A 22</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <div>
+                <img src="Multimedia/running.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">RUNNING</h2>
+                    <p class="slide-schedule">MARTES Y JUEVES <br> 20 A 21</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div>
+                <img src="Multimedia/acondicionamiento.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">ACONDICIONAMIENTO FISICO</h2>
+                    <p class="slide-schedule"> LUNES A VIERNES <br> 8 A 23</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--=== PAGE CONTENT ===-->
+
+    <main>
+        <img src="/Multimedia/main-logo.png" alt="" class="deco-img">
+        <h2 class="title">HORARIOS</h2>
+        <hr class="half-line">
+
+        <div class="overflow-container">
+            <div class="schedule">
+
+                <div class="day-grid">
+                    <div class="day-container">
+                        <p class="big-initial">L</p>
+                        <p class="day">Lunes</p>
+                    </div>
+                    <div class="day-container">
+                        <p class="big-initial">M</p>
+                        <p class="day">Martes</p>
+                    </div>
+                    <div class="day-container">
+                        <p class="big-initial">X</p>
+                        <p class="day">Miercoles</p>
+                    </div>
+                    <div class="day-container">
+                        <p class="big-initial">J</p>
+                        <p class="day">Jueves</p>
+                    </div>
+                    <div class="day-container">
+                        <p class="big-initial">V</p>
+                        <p class="day">Viernes</p>
+                    </div>
+                    <div class="day-container">
+                        <p class="big-initial">S</p>
+                        <p class="day">Sabado</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--7:00-->
+                    <div  class="start-time-container">
+                        <p>07:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">07:00 a 08:00</p>
+                    </div>
+                </div>
+                
+                <div class="start-time-grid"> <!--7:30-->
+                    <div  class="start-time-container">
+                        <p>07:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>07:30</p>
+                    </div>
+                </div>
+                <div class="activity-grid-2row">
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">07:30 a 08:30</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">07:30 a 08:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">07:30 a 08:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">07:30 a 08:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">07:30 a 08:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">07:30 a 08:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">07:30 a 08:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">07:30 a 08:20</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--8:00-->
+                    <div  class="start-time-container">
+                        <p>08:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>08:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>08:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>08:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>08:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>08:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-4row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Pilates Mat</p>
+                        <p class="timeframe">08:00 a 08:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Pilates Mat</p>
+                        <p class="timeframe">08:00 a 08:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">08:00 a 09:00</p>
+                    </div>
+                    <div></div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Gimnasia Acuática Grupal</p>
+                        <p class="timeframe">08:00 a 08:50</p>
+                    </div>
+                    <div></div>
+                </div>
+
+                <div class="start-time-grid"> <!--9:00-->
+                    <div  class="start-time-container">
+                        <p>09:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">09:00 a 10:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--9:30-->
+                    <div  class="start-time-container">
+                        <p>09:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>09:30</p>
+                    </div>
+                </div>
+                <div class="activity-grid-1row">
+                    <div class="activity shorter-activity">
+                        <p class="name">Bebes</p>
+                        <p class="timeframe">09:30 a 10:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Kinesioterapia</p>
+                        <p class="timeframe">09:30 a 10:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Bebes</p>
+                        <p class="timeframe">09:30 a 10:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Kinesioterapia</p>
+                        <p class="timeframe">09:30 a 10:20</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--10:00-->
+                    <div  class="start-time-container">
+                        <p>10:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">10:00 a 11:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--10:30-->
+                    <div  class="start-time-container">
+                        <p>10:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>10:30</p>
+                    </div>
+                </div>
+                <div class="activity-grid-1row">
+                    <div></div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Natacion Niños de 4-6 años</p>
+                        <p class="timeframe">10:30 a 11:20</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natacion Niños de 4-6 años</p>
+                        <p class="timeframe">10:30 a 11:20</p>
+                    </div>
+                    <div></div>
+                </div>
+
+                <div class="start-time-grid"> <!--11:00-->
+                    <div  class="start-time-container">
+                        <p>11:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>11:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>11:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>11:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>11:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>11:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Gimnasia Acuática Grupal</p>
+                        <p class="timeframe">11:00 a 11:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Gimnasia Acuática Grupal</p>
+                        <p class="timeframe">11:00 a 11:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Gimnasia Acuática Grupal</p>
+                        <p class="timeframe">11:00 a 11:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">11:00 a 12:00</p>
+                    </div>  
+                </div>
+                
+                <div class="start-time-grid"> <!--12:00-->
+                    <div  class="start-time-container">
+                        <p>12:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>12:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>12:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>12:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>12:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>12:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-2row">
+                    <div class="activity">
+                        <p class="name">Natación Libre</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación Libre</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación Libre</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación Libre</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación Libre</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">12:00 a 13:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--13:00-->
+                    <div  class="start-time-container">
+                        <p>13:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>13:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>13:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>13:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>13:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>13:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">13:00 a 13:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">13:00 a 13:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">13:00 a 13:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">13:00 a 13:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">13:00 a 14:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">13:00 a 13:50</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--14:00-->
+                    <div  class="start-time-container">
+                        <p>14:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>14:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>14:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>14:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>14:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>14:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Gimnasia Acuática Grupal</p>
+                        <p class="timeframe">14:00 a 14:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Gimnasia Acuática Grupal</p>
+                        <p class="timeframe">14:00 a 14:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">14:00 a 15:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--15:00-->
+                    <div  class="start-time-container">
+                        <p>15:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>15:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>15:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>15:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>15:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>15:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">15:00 a 16:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--16:00-->
+                    <div  class="start-time-container">
+                        <p>16:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">16:00 a 17:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">16:00 a 16:50</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">16:00 a 17:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">16:00 a 17:00</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">16:00 a 16:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">16:00 a 17:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">16:00 a 16:50</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">16:00 a 17:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">16:00 a 17:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">16:00 a 16:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">16:00 a 17:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">16:00 a 16:50</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--16:30-->
+                    <div  class="start-time-container">
+                        <p>16:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>16:30</p>
+                    </div>
+                </div>
+                <div class="activity-grid-2row">
+                    <div></div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Gimnasia Acuática Adaptada</p>
+                        <p class="timeframe">16:30 a 17:20</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Bebés</p>
+                        <p class="timeframe">16:30 a 17:20</p>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Gimnasia Acuática Adaptada</p>
+                        <p class="timeframe">16:30 a 17:20</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Bebés</p>
+                        <p class="timeframe">16:30 a 17:20</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--17:00-->
+                    <div  class="start-time-container">
+                        <p>17:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-2row">
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación para niños 7-11 años</p>
+                        <p class="timeframe">17:00 a 18:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--17:30-->
+                    <div  class="start-time-container">
+                        <p>17:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>17:30</p>
+                    </div>
+                </div>
+                <div class="activity-grid-2row">                
+                    <div class="activity">
+                        <p class="name">Natacion Niños de 4-6 años</p>
+                        <p class="timeframe">17:30 a 18:20</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Bebés</p>
+                        <p class="timeframe">17:30 a 18:20</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Funcional Teens</p>
+                        <p class="timeframe">17:30 a 18:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Niños de 4-6 años</p>
+                        <p class="timeframe">17:30 a 18:20</p>
+                    </div>
+                    <div></div>
+                    <div class="activity">
+                        <p class="name">Bebés</p>
+                        <p class="timeframe">17:30 a 18:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Funcional Teens</p>
+                        <p class="timeframe">17:30 a 18:20</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Niños de 4-6 años</p>
+                        <p class="timeframe">17:30 a 18:20</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--18:00-->
+                    <div  class="start-time-container">
+                        <p>18:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">18:00 a 19:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--18:30-->
+                    <div  class="start-time-container">
+                        <p>18:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>18:30</p>
+                    </div>
+                </div>
+                <div class="activity-grid-2row">
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Entrenamiento Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Funcional</p>
+                        <p class="timeframe">18:30 a 19:30</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--19:00-->
+                    <div  class="start-time-container">
+                        <p>19:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-2row">
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">19:00 a 20:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--19:30-->
+                    <div  class="start-time-container">
+                        <p>19:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>19:30</p>
+                    </div>
+                </div>
+                <div class="activity-grid-1row">
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">19:30 a 20:20</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">19:30 a 20:20</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">19:30 a 20:20</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">19:30 a 20:20</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">19:30 a 20:20</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--20:00-->
+                    <div  class="start-time-container">
+                        <p>20:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">20:00 a 21:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--20:30-->
+                    <div  class="start-time-container">
+                        <p>20:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:30</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>20:30</p>
+                    </div>
+                </div>
+                <div class="activity-grid-1row">
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">20:30 a 21:30</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">20:30 a 21:30</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">20:30 a 21:30</p>
+                    </div>
+                    <div class="activity shorter-activity">
+                        <p class="name">Cross Training</p>
+                        <p class="timeframe">20:30 a 21:30</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--21:00-->
+                    <div  class="start-time-container">
+                        <p>21:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>21:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>21:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>21:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>21:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>21:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">21:00 a 22:00</p>
+                    </div>
+                </div>
+
+                <div class="start-time-grid"> <!--22:00-->
+                    <div  class="start-time-container">
+                        <p>22:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>22:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>22:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>22:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>22:00</p>
+                    </div>
+                    <div class="start-time-container">
+                        <p>22:00</p>
+                    </div>
+                </div>
+                <div class="activity-grid-3row">
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natacion Libre</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity">
+                        <p class="name">Natación adultos desde 12 años</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    <div class="activity normal-activity">
+                        <p class="name">Acondicionamiento Físico</p>
+                        <p class="timeframe">22:00 a 22:50</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--=== FOOTER ===-->
+
+    <footer>
+        <div class="foot-info">
+            <div class="container">
+                <div class="foot-child">
+                    <img src="Multimedia/footer-logo.png" alt="">
+                    <p>
+                        GIMNASIO EL CLUB Ecuador 55,<br>
+                        Alta Gracia - Cordoba<br>
+                        Tel.: (03547) 42-8060
+                    </p>
+
+                </div>
+
+                <div class="foot-child">
+                    <p class="titulo-opiniones"> Opiniones de nuestros socios:</p>
+
+                    <p class="opinion">"Excelente lugar para entrenar y pasar un buen rato"</p>
+                    <p class="autor-opinion">Matias Pyro Guemes</p>
+
+                    <p class="opinion">"Muy buen club! Completo, buen ambiente, moderno! La pileta excelente! Sigan asi!"</p>
+                    <p class="autor-opinion">Gustavo KallenBach</p>
+
+                    <p class="opinion">"Excelente muy bien logrado excelente los profes y una sala muy completa... La verdad muy recomendable"</p>
+                    <p class="autor-opinion">Nahuel Panza</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-links">
+            <a href="/inicio.html" class="foot-link">INICIO</a>
+            <a href="/quienes-somos.html" class="foot-link">QUIENES SOMOS</a>
+            <a href="/actividades.html" class="foot-link">ACTIVIDADES</a>
+            <a href="/horarios.html" class="foot-link">HORARIOS</a>
+            <a href="/contacto.html" class="foot-link">CONTACTO</a>
+            <a href="/smart-training.html" class="foot-link">SMART TRAINING</a>
+        </div>
+    </footer>
+    
+    <!--flickity-->
+    <script src="JS/flickity.pkgd.js"></script>
+</body>
+
+</html>

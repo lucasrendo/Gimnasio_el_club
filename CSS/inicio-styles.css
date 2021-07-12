@@ -1,0 +1,194 @@
+/*=== CSS VARIABLES ===*/
+:root {
+
+    /*Font size normalized*/
+    --title: 2.25rem;
+    --subtitle: 1.4375rem;
+    --paragraph: 0.9375rem;
+}
+
+/*=== BASE ===*/
+/*inherit all intial properties from global styles*/
+
+hr {
+    color: red;
+}
+
+/*=== CSS CLASSES ===*/
+
+.flex-container{
+    display: flex;
+}
+
+.red-text{
+    color: rgb(204, 0, 0);
+}
+
+.half-line{
+    width: 50%;
+    margin-left: 0px;
+}
+
+main{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    max-width: 1200px;
+    line-height: 23px;
+    font-size: var(--paragraph)
+}
+
+.intro{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 576px;
+}
+
+.deco-img{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+.title{
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: var(--title);
+    color: rgb(204, 0, 0);
+    font-weight: 400;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0px;
+    height: 0.15rem;
+    width: 50%;
+    background-color: rgb(204, 0, 0);
+}
+
+.subtitle {
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: var(--subtitle);
+    color: rgb(204, 0, 0);
+    font-weight: 400;
+}
+
+.subtitle::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0px;
+    height: 0.15rem;
+    width: 25%;
+    background-color: rgb(204, 0, 0);
+}
+
+.actividades{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 576px;
+}
+
+.list {
+    margin-top: 0px;
+    padding-left: 1rem;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    margin-bottom: 1rem;
+    color: rgb(153, 153, 153);
+}
+
+.bxs-square-rounded {
+    color: rgb(204, 0, 0);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.horarios {
+    max-width: 576px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.horarios .flex-container {
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.init-time{
+    position: relative;
+    margin-right: 1rem;
+    margin-left: 0px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    width: 3.5rem;
+    height: min-content;
+    text-align: center;
+    background-color: rgb(204, 0, 0);
+    color: white;
+}
+
+.bxs-right-arrow{
+    position: absolute;
+    left: 90%;
+    top: 0.5rem;
+    color: rgb(204, 0, 0);
+}
+
+.end-time{
+    margin-right: 0px;
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    height: min-content;
+    background-color: rgb(191, 188, 186);
+    color: white;
+}
+
+
+/*=== CSS BREAKPOINTS ===*/
+@media only screen and (min-device-width: 380px) {
+    .init-time{
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .end-time{
+        margin-right: 1rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    .deco-img{
+        display: initial;
+    }
+
+    .main-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .intro, .horarios{
+        max-width: none;
+    }
+
+    .actividades, .horarios {
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    .horarios .flex-container{
+        justify-content: space-between;
+    }
+    
+
+}

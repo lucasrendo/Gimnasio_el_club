@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Browser config -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet"> 
+    
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- local CSS -->
+    <link href="CSS/global-styles.css" rel="stylesheet" type="text/css"> <!--site styles-->
+    <link href="CSS/inicio-styles.css" rel="stylesheet" type="text/css"> <!--page styles-->
+    <link rel="stylesheet" href="CSS/flickity.css" media="screen"> <!--slider-->
+
+    <title>Gimnasio El Club</title>
+</head>
+
+<body>
+
+    <!--=== HEADER ===-->
+    <header id="top">
+            <nav class="nav-bar">
+                <img src="Multimedia/elclub-logo.png" alt="Company logo" class="header-logo">
+
+                
+                        <ul class="nav-list">
+                            <li><a href="/inicio.html" class="active">INICIO</a></li>
+                            <li><a href="/quienes-somos.html" class="nav-link">QUIENES SOMOS</a></li>
+                            <li><div class="actividades-dropdown">
+                                    <a href="/actividades.html" class="nav-link">ACTIVIDADES<i class='bx bxs-down-arrow'></i></a>
+                                    <div class="actividades-content">
+                                        <a href="actividades.html#acondicionamiento">ACONDICIONAMIENTO FISICO</a>
+                                        <a href="actividades.html#aquaerobica">AQUAEROBICA</a>
+                                        <a href="actividades.html#funcional">ENTRENAMIENTO FUNCIONAL</a>
+                                        <a href="actividades.html#escuela-verano">ESCUELA DE VERANO</a>
+                                        <a href="actividades.html#gimnasia-acuatica">GIMNASIA ACUATICA GRUPAL</a>
+                                        <a href="actividades.html#gimnasia-postural">GIMNASIA POSTURAL</a>
+                                        <a href="actividades.html#hidroterapia">HIDROTERAPIA</a>
+                                        <a href="actividades.html#natacion">NATACION</a>
+                                        <a href="actividades.html#personal-trainer">PERSONAL TRAINER</a>
+                                        <a href="actividades.html#pilates">PILATES</a>
+                                        <a href="actividades.html#running">RUNNING</a>
+                                        <a href="actividades.html#zumba">ZUMBA</a>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li><a href="/horarios.html" class="nav-link">HORARIOS</a></li>
+                            <li><a href="/contacto.html" class="nav-link">CONTACTO</a></li>
+                            <li><a href="/smart-training.html" class="nav-link">SMART TRAINING</a></li>
+                        </ul>
+                        <div class="nav-sm">
+                            <a href="https://www.instagram.com/elcubag"><i class='bx bxl-instagram  bx-xs sm-icon'></i></a>
+                            <a href="https://www.facebook.com/elcub.altagracia"><i class='bx bxl-facebook bx-xs sm-icon'></i></a>
+                        </div>
+                
+
+            </nav>
+    </header>
+
+    <div class="header-shadow"></div>
+
+    <!--Back to top-->
+    <div class="jump-top"><a href="#top"><i class='bx bxs-up-arrow-square'></i></a></div>
+
+    <!--=== SLIDER ===-->
+    
+    <section class="slider js-flickity" 
+        data-flickity-options='{"wrapAround": true, "autoPlay": 10000, "pauseAutoPlayOnHover": false, "dragThreshold": 10 }'>   
+                                                                                                                
+        <div class="slide">
+            <div>
+                <img src="Multimedia/entrenamiento-funcional.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">ENTRENAMIENTO FUNCIONAL</h2>
+                    <p class="slide-schedule">LUNES, MIERCOLES Y VIERNES <br> 15 A 16 - 19:30 A 20:30 - 21 A 22</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <div>
+                <img src="Multimedia/running.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">RUNNING</h2>
+                    <p class="slide-schedule">MARTES Y JUEVES <br> 20 A 21</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div>
+                <img src="Multimedia/acondicionamiento.jpg" alt="" class="slide-img">
+                <div class="slide-text">
+                    <h2 class="slide-title">ACONDICIONAMIENTO FISICO</h2>
+                    <p class="slide-schedule"> LUNES A VIERNES <br> 8 A 23</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--=== PAGE CONTENT ===-->
+
+    <main>
+
+        <div class="intro">
+            <img src="/Multimedia/main-logo.png" alt="" class="deco-img">
+            <h2 class="title">BIENVENIDOS!</h2>
+            <hr>
+            <p><strong>Gimnasio "el club"</strong> es una institución dedicada a la <span class="red-text">actividad física y la salud</span>, que cuenta con equipo humano, infraestructura y orga- nización, excelentemente combinados, para permitir a sus socios, realizar actividades deportivas en los distintos salones, patio, terraza y pileta de natación cubierta y climatizada.</p>
+        </div>
+
+        <div class="main-flex">
+            <section class="actividades">
+                <h3 class="subtitle">ACTIVIDADES</h3>
+                <hr class="half-line">
+                <br>
+                <ul class="list flex-container">
+                    <div>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Acodicionamiento Físico</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Actividad Física Adaptada</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Aero Local</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Aqua Aeróbics</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Entrenamiento Funcional</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Femme Latino</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Femme Pop</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Gimnasia Acuática Adaptada</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Gimnasia Acuática Grupal</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Natación para Bebes</li>
+                    </div>
+                    <div>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Natación para Niños</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Natación para Adultos</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Pilates</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Ritmos</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Running</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Tango</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Tango Escenario</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Yoga</li>
+                        <li class="list-item"><i class='bx bxs-square-rounded'></i>Zumba</li>
+                    </div>
+                </ul>
+            </section>
+
+            <section class="horarios">
+                <h3 class="subtitle">PROXIMOS HORARIOS</h3>
+                <hr class="half-line">
+
+                <div class="flex-container">
+                    <div class="flex-container">
+                        <p class="init-time">9:00<i class='bx bxs-right-arrow'></i></p>
+                        <p>Acondicionamiento Físico</p>
+                    </div>
+                    <p class="end-time">10:00</p>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-container">
+                        <p class="init-time">9:00<i class='bx bxs-right-arrow'></i></p>
+                        <p>Natación adultos desde 12 años</p>
+                    </div>
+                    <p class="end-time">10:00</p>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-container">
+                        <p class="init-time">9:00<i class='bx bxs-right-arrow'></i></p>
+                        <p>Natación Libre</p>
+                    </div>
+                    <p class="end-time">10:00</p>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-container">
+                        <p class="init-time">9:30<i class='bx bxs-right-arrow'></i></p>
+                        <p>Bebés</p>
+                    </div>
+                    <p class="end-time">10:20</p>
+                </div>
+
+                <div class="flex-container"v>
+                    <div class="flex-container">
+                        <p class="init-time">10:00<i class='bx bxs-right-arrow'></i></p>
+                        <p>Acondicionamiento Físico</p>
+                    </div>
+                    <p class="end-time">11:00</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--=== FOOTER ===-->
+
+    <footer>
+        <div class="foot-info">
+            <div class="container">
+                <div class="foot-child">
+                    <img src="Multimedia/footer-logo.png" alt="">
+                    <p>
+                        GIMNASIO EL CLUB Ecuador 55,<br>
+                        Alta Gracia - Cordoba<br>
+                        Tel.: (03547) 42-8060
+                    </p>
+
+                </div>
+
+                <div class="foot-child">
+                    <p class="titulo-opiniones"> Opiniones de nuestros socios:</p>
+
+                    <p class="opinion">"Excelente lugar para entrenar y pasar un buen rato"</p>
+                    <p class="autor-opinion">Matias Pyro Guemes</p>
+
+                    <p class="opinion">"Muy buen club! Completo, buen ambiente, moderno! La pileta excelente! Sigan asi!"</p>
+                    <p class="autor-opinion">Gustavo KallenBach</p>
+
+                    <p class="opinion">"Excelente muy bien logrado excelente los profes y una sala muy completa... La verdad muy recomendable"</p>
+                    <p class="autor-opinion">Nahuel Panza</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-links">
+            <a href="/inicio.html" class="foot-link">INICIO</a>
+            <a href="/quienes-somos.html" class="foot-link">QUIENES SOMOS</a>
+            <a href="/actividades.html" class="foot-link">ACTIVIDADES</a>
+            <a href="/horarios.html" class="foot-link">HORARIOS</a>
+            <a href="/contacto.html" class="foot-link">CONTACTO</a>
+            <a href="/smart-training.html" class="foot-link">SMART TRAINING</a>
+        </div>
+    </footer>
+    
+    <!--flickity-->
+    <script src="JS/flickity.pkgd.js"></script>
+</body>
+
+</html>
+
+<!--
+1. Adjust flex containers in main section for better desktop visuals (horarios and actividades)
+-->
